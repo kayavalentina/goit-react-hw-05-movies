@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/884.939a4f8d.chunk.js","mappings":"gMAEe,SAASA,IACtB,OAAOC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,gBACd,C","sources":["pages/MovieDetails.jsx"],"sourcesContent":["//import { fetchMovieDetails } from '../api/api';\n\nexport default function MovieDetails() {\n  return <div>MovieDetails</div>;\n}\n"],"names":["MovieDetails","_jsx","children"],"sourceRoot":""}
