@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/583.1f7fcbcd.chunk.js","mappings":"iMAEe,SAASA,IAEtB,OAAOC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,QACd,C","sources":["pages/CastPage/CastPage.jsx"],"sourcesContent":["//import { fetchMovieCredits } from '../api/api';\n\nexport default function Cast() {\n    \n  return <div>Cast</div>;\n}\n"],"names":["Cast","_jsx","children"],"sourceRoot":""}
