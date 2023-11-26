@@ -2,17 +2,17 @@ import React, { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { AppLayout } from './index';
 
-const HomePage = lazy(() => import('pages/HomePage'));
-const Movies = lazy(() => import('pages/Movies'));
-const MovieDetails = lazy(() => import('pages/MovieDetails'));
-const NotFoundPage = lazy(() => import('pages/NotFoundPage'));
-const Cast = lazy(() => import('pages/Cast'));
-const Reviews = lazy(() => import('pages/Reviews'));
+const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
+const Movies = lazy(() => import('../pages/MoviesPage/MoviesPage'));
+const MovieDetails = lazy(() =>import('../pages/MovieDetailsPage/MovieDetailsPage'));
+const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
+const Cast = lazy(() => import('../pages/CastPage/CastPage'));
+const Reviews = lazy(() => import('../pages/RewiesPage/ReviewsPage'));
 
 export const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<AppLayout />} >
+      <Route path="/" element={<AppLayout />}>
         <Route index element={<HomePage />} />
         <Route path="movies" element={<Movies />} />
 

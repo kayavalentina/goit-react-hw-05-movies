@@ -1,11 +1,12 @@
-import { NavLink} from 'react-router-dom';
+import { AppNav, AppNavLink } from './Navigation.styled';
 
 const Navigation = () => {
-    return (
-      <div>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/movies">Movies</NavLink>
-      </div>
-    );
-}
+  return (
+    <AppNav>
+      <AppNavLink to="/">Home</AppNavLink>
+      <AppNavLink to="/movies">Movies</AppNavLink>
+    </AppNav>
+  );
+};
+
 export default Navigation;

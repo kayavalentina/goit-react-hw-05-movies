@@ -1,4 +1,3 @@
-//6259a7db6101e3f3dcaf1c1f5b1cb643
 import axios from 'axios';
 
 const BASE_URL = 'https://api.themoviedb.org/3';
