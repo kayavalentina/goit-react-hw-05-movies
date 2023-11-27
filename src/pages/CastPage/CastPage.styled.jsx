@@ -9,7 +9,9 @@ export const LoaderWrapper = styled.div`
 `;
 
 export const CastList = styled.ul`
-  display: grid;
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 20px;
