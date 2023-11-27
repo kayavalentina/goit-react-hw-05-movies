@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const AppHeader = styled.header`
   top: 0;
@@ -10,7 +10,7 @@ export const AppHeader = styled.header`
   padding-left: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
-  background: linear-gradient(to left, #333333 65%, #dd1818);
+  background: linear-gradient(#2b2a2a 65%, #4d18dd);
   box-shadow: 0 8px 6px -6px black;
 `;
 

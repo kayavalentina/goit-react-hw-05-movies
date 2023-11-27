@@ -1,13 +1,18 @@
 import { fetchSearchMovie } from '../../api/moviesApi';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { PageHeader, MoviesGallery, SearchForm, Loader } from '../../components/index';
+import {
+  PageHeader,
+  MoviesGallery,
+  SearchForm,
+  Loader,
+} from '../../components/index';
 import usePrevious from 'hooks/usePrevious';
 import * as notify from 'utils/notifications';
 import { LoaderWrapper, TextWrapper, WelcomeText } from './MoviesPage.styled';
 
 export default function Movie() {
- const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState(searchParams.get('query'));
   const [movies, setMovies] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -64,9 +69,7 @@ export default function Movie() {
     <>
       <PageHeader text="Movies" />
       <SearchForm onSubmit={onFormSubmit} />
-
       {movies.length > 0 && <MoviesGallery moviesSet={movies} />}
-
       {movies.length === 0 && !isLoading && (
         <TextWrapper>
           <WelcomeText>
@@ -82,5 +85,4 @@ export default function Movie() {
       )}
     </>
   );
-};
-
+}

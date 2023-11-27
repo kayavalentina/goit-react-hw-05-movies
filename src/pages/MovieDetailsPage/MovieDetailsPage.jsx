@@ -27,7 +27,7 @@ const MovieDetailsPage = () => {
   const isEmpty = Object.keys(movie).length === 0;
 
   return (
-    <div>
+    <>
       {!isEmpty && (
         <>
           <PageHeader text={title} />
@@ -47,7 +47,7 @@ const MovieDetailsPage = () => {
           </MovieDetailsWrapper>
         </>
       )}
-    </div>
+    </>
   );
 };
 

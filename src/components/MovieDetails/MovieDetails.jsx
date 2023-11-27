@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import {
   MovieWrapper,
+  MoviePoster,
   InfoWrapper,
   ReleaseStatus,
   MovieRelease,
@@ -15,11 +16,13 @@ import {
 
 const MovieDetails = ({ movieData }) => {
   const {
+    poster_path,
     genres,
     homepage,
     overview,
     release_date,
     status,
+    title,
     vote_average,
   } = movieData;
 
@@ -27,7 +30,10 @@ const MovieDetails = ({ movieData }) => {
 
   return (
     <MovieWrapper>
-      
+      <MoviePoster
+        src={`https://image.tmdb.org/t/p/w300${poster_path}`}
+        alt={title}
+      />
       <InfoWrapper>
         <ReleaseStatus>Status: {status}</ReleaseStatus>
         <MovieRelease>

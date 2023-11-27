@@ -1,10 +1,10 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const ReviewItem = styled.li`
   display: flex;
   flex-direction: column;
   margin: 5px 40px 20px 40px;
-  border: 2px solid #ed462f;
+  border: 2px solid #060606;
   border-radius: 2px;
 `;
 

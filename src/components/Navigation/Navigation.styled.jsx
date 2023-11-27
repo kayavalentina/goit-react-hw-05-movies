@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const AppNav = styled.nav`
   margin: 0 auto;
@@ -20,7 +20,7 @@ export const AppNavLink = styled(NavLink)`
   }
 
   &.active {
-    color: #f32121;
+    color: #f410b3;
     text-shadow: 1px 0 11px rgb(255 0 0 / 90%);
   }
 `;

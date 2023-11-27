@@ -9,3 +9,4 @@ export { default as ButtonLink } from './ButtonLink/ButtonLink';
 export { default as MovieDetails } from './MovieDetails/MovieDetails';
 export { default as Container } from './Container/Container';
 export { default as ReviewCard } from './ReviewCard/ReviewCard';
+export { default as ActorCard } from './ActorCard/ActorCard';

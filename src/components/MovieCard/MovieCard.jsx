@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import {
   MovieItem,
   MovieLink,
+  MovieImg,
   InfoWrapper,
   MovieName,
   MovieRelease,
@@ -16,10 +17,14 @@ const MovieCard = ({ id, poster_path, release_date, title, vote_average }) => {
 
   const releaseDate = new Date(release_date);
 
-    return (
-       <MovieItem id={id}>
-            <MovieLink to={`/movies/${id}`} state={{ from: location }}>  
- <InfoWrapper>
+  return (
+    <MovieItem id={id}>
+      <MovieLink to={`/movies/${id}`} state={{ from: location }}>
+        <MovieImg
+          src={`https://image.tmdb.org/t/p/w300${poster_path}`}
+          alt={title}
+        />
+        <InfoWrapper>
           <MovieName>
             {title}
             <Line />

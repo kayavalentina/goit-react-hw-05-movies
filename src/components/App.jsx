@@ -4,7 +4,9 @@ import { AppLayout } from './index';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const Movies = lazy(() => import('../pages/MoviesPage/MoviesPage'));
-const MovieDetails = lazy(() =>import('../pages/MovieDetailsPage/MovieDetailsPage'));
+const MovieDetails = lazy(() =>
+  import('../pages/MovieDetailsPage/MovieDetailsPage')
+);
 const NotFoundPage = lazy(() => import('../pages/NotFoundPage/NotFoundPage'));
 const Cast = lazy(() => import('../pages/CastPage/CastPage'));
 const Reviews = lazy(() => import('../pages/RewiesPage/ReviewsPage'));

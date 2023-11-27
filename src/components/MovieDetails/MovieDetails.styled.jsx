@@ -1,7 +1,12 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const MovieWrapper = styled.div`
   display: flex;
+`;
+
+export const MoviePoster = styled.img`
+  width: 400px;
+  padding: 20px;
 `;
 
 export const InfoWrapper = styled.div`

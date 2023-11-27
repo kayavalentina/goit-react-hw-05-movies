@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const TextWrapper = styled.div`
   min-width: 480px;

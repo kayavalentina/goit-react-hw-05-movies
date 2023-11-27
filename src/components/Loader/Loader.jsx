@@ -1,13 +1,13 @@
-import { Bars } from 'react-loader-spinner';
+import { Rings } from 'react-loader-spinner';
 import { LoaderWrapper } from './Loader.styled';
 
 const Loader = () => {
   return (
     <LoaderWrapper>
-      <Bars
+      <Rings
         height={100}
         width={100}
-        color="#b43321"
+        color="#4121b4"
         ariaLabel="Loading indicator"
       />
     </LoaderWrapper>

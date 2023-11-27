@@ -1,18 +1,16 @@
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 
 export const MovieDetailsWrapper = styled.div`
   margin-top: 20px;
   color: #ffffff;
   background-color: #333333;
-  box-shadow: 0px 1px 3px 0px rgba(237, 70, 47, 0.2),
-    0px 1px 1px 0px rgba(237, 70, 47, 0.14),
-    0px 2px 1px -1px rgba(237, 70, 47, 0.12);
+  box-shadow: 0px 1px 3px 0px rgba(237, 70, 47, 0.2);
 `;
 
 export const Line = styled.hr`
   width: 96%;
   margin: 0 auto;
-  border: 1px solid #ed462f;
+  border: 1px solid #1a1717;
 `;
 
 export const BtnWrapper = styled.div`

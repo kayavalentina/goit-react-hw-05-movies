@@ -16,10 +16,7 @@ const HomePage = () => {
       {movies && <MoviesGallery moviesSet={movies} />}
       {movies && movies.length === 0 && (
         <TextWrapper>
-          <NoMovieText>
-            All filmmakers are on holiday. <br /> There are no trending movies
-            for now.
-          </NoMovieText>
+          <NoMovieText>There are no trending movies for now.</NoMovieText>
         </TextWrapper>
       )}
     </>
