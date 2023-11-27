@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/381.1baa9a0c.chunk.js","mappings":"iMAEe,SAASA,IACtB,OAAOC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,WACd,C","sources":["pages/RewiesPage/ReviewsPage.jsx"],"sourcesContent":["//import {  fetchMovieReviews  } from '../api/api';\n\nexport default function Reviews() {\n  return <div>Reviews</div>;\n}\n"],"names":["Reviews","_jsx","children"],"sourceRoot":""}
