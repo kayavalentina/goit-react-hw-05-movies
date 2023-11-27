@@ -14,6 +14,8 @@ import {
   MovieHomepage,
 } from './MovieDetails.styled';
 
+const defaultImg =
+  'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
 const MovieDetails = ({ movieData }) => {
   const {
     poster_path,
@@ -31,7 +33,12 @@ const MovieDetails = ({ movieData }) => {
   return (
     <MovieWrapper>
       <MoviePoster
-        src={`https://image.tmdb.org/t/p/w300${poster_path}`}
+        src={
+          poster_path
+            ? `https://image.tmdb.org/t/p/w300${poster_path}`
+            : defaultImg
+        }
+        width={250}
         alt={title}
       />
       <InfoWrapper>

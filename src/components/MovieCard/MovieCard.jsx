@@ -12,6 +12,8 @@ import {
   VoteNum,
 } from './MovieCard.styled';
 
+const defaultImg =
+  'https://ireland.apollo.olxcdn.com/v1/files/0iq0gb9ppip8-UA/image;s=1000x700';
 const MovieCard = ({ id, poster_path, release_date, title, vote_average }) => {
   const location = useLocation();
 
@@ -21,7 +23,12 @@ const MovieCard = ({ id, poster_path, release_date, title, vote_average }) => {
     <MovieItem id={id}>
       <MovieLink to={`/movies/${id}`} state={{ from: location }}>
         <MovieImg
-          src={`https://image.tmdb.org/t/p/w300${poster_path}`}
+          src={
+            poster_path
+              ? `https://image.tmdb.org/t/p/w300${poster_path}`
+              : defaultImg
+          }
+          width={250}
           alt={title}
         />
         <InfoWrapper>
